@@ -2,10 +2,10 @@ ARG CUDA_VERSION=10.1
 ARG CUDA_UBUNTU_VERSION=16.04
 ARG AMDGPU_VERSION=17.40-514569
 ARG GIT_REPOSITORY=https://github.com/xmrig/xmrig.git
-ARG GIT_BRANCH=v5.1.0
+ARG GIT_BRANCH=master
 
 ARG GIT_REPOSITORY_CUDA=https://github.com/xmrig/xmrig-cuda.git
-ARG GIT_BRANCH_CUDA=v2.0.1-beta
+ARG GIT_BRANCH_CUDA=master
 
 FROM nvidia/cuda:${CUDA_VERSION}-devel-ubuntu${CUDA_UBUNTU_VERSION} AS build-cuda
 
